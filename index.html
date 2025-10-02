@@ -5,32 +5,121 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>林睿馳 - 個人履歷</title>
   <style>
-    body { font-family:"Microsoft JhengHei",sans-serif; line-height:1.6; margin:0; padding:0; background:#f7f9fc; color:#333; }
-    header { background:#2c3e50; color:white; text-align:center; padding:40px 20px; }
-    header h1 { margin:0; font-size:2.5em; }
-    header p { margin:10px 0; }
-    header img { width:120px; height:120px; border-radius:50%; border:3px solid #fff; margin-top:15px; }
-    .container { width:80%; max-width:900px; margin:auto; padding:20px 0; }
-    section { background:white; margin:20px 0; padding:20px; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1); }
-    section h2 { color:#2c3e50; margin:20px 0 10px 0; border-bottom:2px solid #eee; padding-bottom:5px; }
-    ul { padding-left:20px; }
-    footer { text-align:center; padding:20px; background:#2c3e50; color:white; margin-top:40px; }
-    a { color:#2980b9; text-decoration:none; }
-    a:hover { text-decoration:underline; }
+    body {
+      font-family:"Microsoft JhengHei",sans-serif;
+      margin:0;
+      padding:0;
+      background:#f4f6fa;
+      color:#333;
+      display:flex;
+    }
+    /* 左側欄 */
+    .sidebar {
+      width:280px;
+      background:#2c3e50;
+      color:white;
+      padding:30px 20px;
+      box-shadow:2px 0 8px rgba(0,0,0,0.2);
+      position:fixed;
+      height:100%;
+      overflow:auto;
+    }
+    .sidebar img {
+      width:120px;
+      height:120px;
+      border-radius:50%;
+      display:block;
+      margin:0 auto 20px;
+      border:3px solid #fff;
+    }
+    .sidebar h1 {
+      text-align:center;
+      font-size:1.6em;
+      margin:10px 0;
+    }
+    .sidebar p {
+      text-align:center;
+      font-size:0.95em;
+      margin:5px 0;
+    }
+    .sidebar a {
+      color:#1abc9c;
+      text-decoration:none;
+    }
+    .sidebar a:hover {
+      text-decoration:underline;
+    }
+    .sidebar h3 {
+      margin-top:25px;
+      font-size:1.1em;
+      border-bottom:1px solid rgba(255,255,255,0.3);
+      padding-bottom:5px;
+    }
+    .sidebar ul {
+      list-style:none;
+      padding:0;
+      font-size:0.9em;
+    }
+    .sidebar ul li {
+      margin:8px 0;
+    }
+
+    /* 右側內容區 */
+    .main {
+      margin-left:300px;
+      padding:40px;
+      flex:1;
+    }
+    section {
+      background:white;
+      margin:20px 0;
+      padding:25px;
+      border-radius:10px;
+      box-shadow:0 2px 8px rgba(0,0,0,0.1);
+    }
+    section h2 {
+      margin:0 0 15px;
+      font-size:1.4em;
+      color:#2c3e50;
+      border-left:5px solid #1abc9c;
+      padding-left:10px;
+    }
+    ul {
+      padding-left:20px;
+    }
+    footer {
+      text-align:center;
+      padding:20px;
+      margin-top:30px;
+      font-size:0.9em;
+      color:#888;
+    }
   </style>
 </head>
 <body>
-  <header>
+  <!-- 左側欄 -->
+  <aside class="sidebar">
+    <img src="profile.jpg" alt="個人照片">
     <h1>林睿馳</h1>
-    <p>📧 rickylin950906@gmail.com | 📱 0958-710-860</p>
-    <p>🌐 <a href="https://github.com/rickylin950906-lab" target="_blank" style="color:#1abc9c;">GitHub</a> | 💼 <a href="https://www.linkedin.com" target="_blank" style="color:#1abc9c;">LinkedIn</a></p>
-    <img src="profile.jpg" alt="個人照片"> <!-- 將你的照片命名為 profile.jpg 放在同資料夾 -->
-  </header>
+    <p>📧 rickylin950906@gmail.com</p>
+    <p>📱 0958-710-860</p>
+    <p>🌐 <a href="https://github.com/rickylin950906-lab" target="_blank">GitHub</a></p>
+    <p>💼 <a href="https://www.linkedin.com" target="_blank">LinkedIn</a></p>
 
-  <div class="container">
+    <h3>技能</h3>
+    <ul>
+      <li>Python、C</li>
+      <li>Git、VS Code</li>
+      <li>AI 基礎、資料分析</li>
+      <li>英文 (TOEIC 目標 900)</li>
+    </ul>
+  </aside>
+
+  <!-- 右側主要內容 -->
+  <div class="main">
     <section>
-      <h2>🎯 個人簡介</h2>
-      <p>我是中原大學 電機資訊學院智慧運算與大數據學士班的學生，對人工智慧與大數據應用充滿熱情。曾自學人工智慧導論與 Python 程式設計，並持續精進程式能力與資料分析技巧。希望透過專案與研究累積經驗，未來能投入智慧運算或資料科學相關產業。</p>
+      <h2>🎯 關於我</h2>
+      <p>我是中原大學 電機資訊學院智慧運算與大數據學士班的學生，對人工智慧與資料科學充滿熱情。除了課堂學習外，也積極透過自學 Python 與 AI 專案來培養實作能力，期望未來能投身人工智慧、大數據或通訊相關產業。</p>
     </section>
 
     <section>
@@ -44,24 +133,8 @@
     <section>
       <h2>💼 經歷</h2>
       <ul>
-        <li><b>社團經驗</b>：羽球社社員，協助活動規劃與參與</li>
-        <li><b>課外學習</b>：自主學習 Python、人工智慧導論，完成數個小專案</li>
-        <li><b>專案經驗</b>：
-          <ul>
-            <li>📊 簡易情緒分析工具（NLP）</li>
-            <li>📈 學生成績分析系統（Python + Matplotlib）</li>
-          </ul>
-        </li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>🛠️ 技能</h2>
-      <ul>
-        <li><b>程式語言</b>：Python、C</li>
-        <li><b>工具</b>：Git、GitHub、VS Code</li>
-        <li><b>語言能力</b>：中文（母語）、英文（中高級，目標 TOEIC 900）</li>
-        <li><b>領域知識</b>：人工智慧基礎、資料分析、通訊系統概論</li>
+        <li><b>社團</b>：羽球社社員，協助活動規劃與參與</li>
+        <li><b>課外學習</b>：自主學習 Python、人工智慧導論</li>
       </ul>
     </section>
 
@@ -69,20 +142,19 @@
       <h2>📘 大學規劃</h2>
       <ul>
         <li>考取 TOEIC 900 分以上</li>
-        <li>參與智慧運算與大數據相關實驗室研究</li>
-        <li>學習吉他，培養多元興趣</li>
+        <li>參與 AI 與大數據相關實驗室研究</li>
+        <li>培養音樂興趣（吉他）</li>
       </ul>
     </section>
 
     <section>
-      <h2>🌱 職涯目標</h2>
-      <p>希望能在大學期間累積程式與資料分析實作經驗，畢業後投入人工智慧、大數據或通訊系統領域，持續挑戰並提升專業能力。</p>
+      <h2>🌱 目標</h2>
+      <p>希望能在大學期間累積程式與資料分析實作經驗，畢業後投入人工智慧、大數據或通訊系統領域，並持續精進專業能力。</p>
     </section>
-  </div>
 
-  <footer>
-    <p>© 2025 林睿馳 | All Rights Reserved</p>
-  </footer>
+    <footer>
+      <p>© 2025 林睿馳 | All Rights Reserved</p>
+    </footer>
+  </div>
 </body>
 </html>
-
