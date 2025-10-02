@@ -6,93 +6,106 @@
   <title>林睿馳 - 個人履歷</title>
   <style>
     body {
-      font-family:"Microsoft JhengHei",sans-serif;
-      margin:0;
-      padding:0;
-      background:#f4f6fa;
-      color:#333;
-      display:flex;
+      font-family: "Microsoft JhengHei", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: #333;
+      display: flex;
     }
     /* 左側欄 */
     .sidebar {
-      width:280px;
-      background:#2c3e50;
-      color:white;
-      padding:30px 20px;
-      box-shadow:2px 0 8px rgba(0,0,0,0.2);
-      position:fixed;
-      height:100%;
-      overflow:auto;
+      width: 280px;
+      background: #1b2838;
+      color: white;
+      padding: 30px 20px;
+      box-shadow: 3px 0 12px rgba(0, 0, 0, 0.5);
+      position: fixed;
+      height: 100%;
+      overflow: auto;
+      text-align: center;
     }
     .sidebar img {
-      width:120px;
-      height:120px;
-      border-radius:50%;
-      display:block;
-      margin:0 auto 20px;
-      border:3px solid #fff;
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      margin: 0 auto 20px;
+      border: 3px solid #1abc9c;
+      transition: transform 0.3s ease;
+    }
+    .sidebar img:hover {
+      transform: scale(1.1);
     }
     .sidebar h1 {
-      text-align:center;
-      font-size:1.6em;
-      margin:10px 0;
+      font-size: 1.8em;
+      margin: 10px 0;
+      color: #1abc9c;
     }
     .sidebar p {
-      text-align:center;
-      font-size:0.95em;
-      margin:5px 0;
+      font-size: 0.95em;
+      margin: 5px 0;
+      color: #ddd;
     }
     .sidebar a {
-      color:#1abc9c;
-      text-decoration:none;
+      color: #1abc9c;
+      text-decoration: none;
+      transition: color 0.3s;
     }
     .sidebar a:hover {
-      text-decoration:underline;
+      color: #16f0c5;
     }
     .sidebar h3 {
-      margin-top:25px;
-      font-size:1.1em;
-      border-bottom:1px solid rgba(255,255,255,0.3);
-      padding-bottom:5px;
+      margin-top: 25px;
+      font-size: 1.1em;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      padding-bottom: 5px;
+      text-align: left;
     }
     .sidebar ul {
-      list-style:none;
-      padding:0;
-      font-size:0.9em;
+      list-style: none;
+      padding: 0;
+      font-size: 0.9em;
+      text-align: left;
     }
     .sidebar ul li {
-      margin:8px 0;
+      margin: 8px 0;
+      padding-left: 5px;
     }
 
     /* 右側內容區 */
     .main {
-      margin-left:300px;
-      padding:40px;
-      flex:1;
+      margin-left: 300px;
+      padding: 40px;
+      flex: 1;
     }
     section {
-      background:white;
-      margin:20px 0;
-      padding:25px;
-      border-radius:10px;
-      box-shadow:0 2px 8px rgba(0,0,0,0.1);
+      background: rgba(255, 255, 255, 0.95);
+      margin: 20px 0;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    section:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.3);
     }
     section h2 {
-      margin:0 0 15px;
-      font-size:1.4em;
-      color:#2c3e50;
-      border-left:5px solid #1abc9c;
-      padding-left:10px;
+      margin: 0 0 15px;
+      font-size: 1.5em;
+      color: #2c3e50;
+      border-left: 6px solid #1abc9c;
+      padding-left: 12px;
     }
     ul {
-      padding-left:20px;
+      padding-left: 20px;
     }
     footer {
-      text-align:center;
-      padding:20px;
-      margin-top:30px;
-      font-size:0.9em;
-      color:#888;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+      font-size: 0.9em;
+      color: #fff;
     }
   </style>
 </head>
